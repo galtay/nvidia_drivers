@@ -76,16 +76,16 @@ Now run the command to install a few versions of python,
 
 # PyQt4
 
-This is a requirement of the PyQt4Agg backend for matplotlib.  You will have 
-to run these commands once for each version of python you want to install 
-matplotlib under. 
+This is a requirement of the interactive `Qt4Agg` backend for matplotlib.  
+You will have to run these commands once for each version of python you want 
+to install matplotlib under. 
 
 [sip download page](http://www.riverbankcomputing.com/software/sip/download)
 get latest (e.g. `sip-4.16.7.tar.gz`) file and uncompress
-`python configure.py` 
-`make install`
+    python configure.py 
+    make install
 
 [pyqt4 download page](http://www.riverbankcomputing.com/software/pyqt/download)
 get latest (e.g. `PyQt-x11-gpl-4.11.3.tar.gz`) file and uncompress
-`python configure-ng.py`
-`make install`
+    python configure-ng.py
+    make install
