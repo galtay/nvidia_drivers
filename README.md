@@ -16,6 +16,9 @@ commands,
     sudo sed -i -e 's/#GRUB_TERMINAL/GRUB_TERMINAL/g' /etc/default/grub
     sudo update-grub
 
+Restart the computer to allow these changes to take effect. When it boots 
+back up, follow the steps below to install the driver. 
+
   * Go to the 
     [Nvidia Driver Download](http://www.nvidia.com/Download/index.aspx)
     and find the right driver.  Download the file to your machine 
@@ -37,7 +40,9 @@ Reboot and you're good.
 
 # Development Packages
 
-Install some development packages system wide. 
+Install some development packages system wide.  You can copy/paste the 
+commands below or run the scipt `install_dev_packages.sh` that is part 
+of this git repo. 
 
     sudo apt-get install -y emacs texlive imagemagick
     sudo apt-get install -y zlib1g-dev libbz2-dev libssl-dev libreadline-dev
