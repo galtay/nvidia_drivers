@@ -44,8 +44,48 @@ Install some development packages system wide.  You can copy/paste the
 commands below or run the scipt `install_dev_packages.sh` that is part 
 of this git repo. 
 
-    sudo apt-get install -y emacs texlive imagemagick
+    sudo apt-get install -y emacs texlive imagemagick gfortran sqlite3-dev
     sudo apt-get install -y zlib1g-dev libbz2-dev libssl-dev libreadline-dev
-    sudo apt-get intsall -y gfortran
     sudo apt-get install -y libblas-dev liblapack-dev libatlas-dev
     sudo apt-get install -y libpng-dev dvipng libfreetype6-dev
+
+# Pyenv
+
+Install this super cool software that allows you to run multiple versions
+of python at once in a sensible way. Follow the instructions below or run
+the script `install_pyenv.sh` (customize `.bashrc` to something else if you 
+like). 
+
+    git clone https://github.com/yyuu/pyenv.git ~/.pyenv
+
+    echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+    echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+    echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+    exec $SHELL
+
+Now run the command to install a few versions of python, 
+
+    pyenv install 2.7.9
+    pyenv rehash
+
+    pyenv install 3.3.6
+    pyenv rehash
+
+    pyenv global 2.7.9
+    
+
+# PyQt4
+
+This is a requirement of the PyQt4Agg backend for matplotlib.  You will have 
+to run these commands once for each version of python you want to install 
+matplotlib under. 
+
+[sip download page](http://www.riverbankcomputing.com/software/sip/download)
+get latest (e.g. `sip-4.16.7.tar.gz`) file and uncompress
+`python configure.py` 
+`make install`
+
+[pyqt4 download page](http://www.riverbankcomputing.com/software/pyqt/download)
+get latest (e.g. `PyQt-x11-gpl-4.11.3.tar.gz`) file and uncompress
+`python configure-ng.py`
+`make install`
