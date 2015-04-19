@@ -29,9 +29,8 @@ back up, follow the steps below to install the driver.
   * Install the build-essential package 
     (`sudo apt-get install build-essential`)
 
-  * Stop the display manager (`sudo /etc/init.d/mdm stop`).  
-    Note `mdm` is the default for Mint, might be `lightdm` or `gdm` for other 
-    flavors. 
+  * Stop the display manager (`sudo /etc/init.d/mdm stop`).  Note `mdm` is 
+    the default for Mint, might be `lightdm` or `gdm` for other flavors. 
 
   * Run the install script (`sudo sh ./NVIDIA-Linux-x86_64-346.59.run`)
 
