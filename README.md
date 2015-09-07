@@ -1,14 +1,17 @@
 
 # Introduction
 
-Some notes on getting proprietary Nvidia drivers setup on debian based linux machines.
+Some notes on getting proprietary Nvidia drivers setup on debian based linux
+machines.
 
 # Proprietary Nvidia Driver
 
 This step requires use of the virtual terminal (tty) reached by pressing
 `Ctrl-Alt-F1`.  If you get a blank screen when doing that, the default
-resolution is probably not compatible with the video card.  Give the following
-commands,
+resolution is probably not compatible with the video card.  Move through
+the function keys until you get back to your X-window (i.e. `Ctrl-Alt-F2`,
+`Ctrl-Alt-F3`, ...).  The default is usually `Ctrl-Alt-F6`.  Open a terminal
+and Give the following commands,
 
     sudo sed -i -e 's/#GRUB_TERMINAL/GRUB_TERMINAL/g' /etc/default/grub
     sudo update-grub
