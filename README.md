@@ -34,7 +34,9 @@ back up, follow the steps below to install the driver.
 
   * Run the install script (`sudo sh ./NVIDIA-Linux-x86_64-346.59.run`)
 
-Reboot and you're good.
+  * Reboot and the driver should be working.
+
+  * Add `export PATH=/usr/local/cuda-7.0/bin:$PATH` and `export LD_LIBRARY_PATH=/usr/local/cuda-7.0/lib64` to your startup script
 
 
 # Supporting packages
