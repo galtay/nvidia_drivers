@@ -35,3 +35,9 @@ back up, follow the steps below to install the driver.
   * Run the install script (`sudo sh ./NVIDIA-Linux-x86_64-346.59.run`)
 
 Reboot and you're good.
+
+
+# Supporting packages
+
+  * On Ubuntu 14 or 15 you can install some useful libraries with
+    `sudo apt-get install freeglut3-dev libx11-dev libxmu-dev libxi-dev libglu1-mesa-dev`
